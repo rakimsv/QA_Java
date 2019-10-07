@@ -60,4 +60,17 @@ class StringProcessing{
         }
         System.out.println(count);
     }
+    //public void CountText(String msg, String term){
+        String alpha;
+        int i=0;
+        int count=0;
+        for(i=0;i<msg.length();i++){
+            alpha=msg.substring(i,i+1);
+            if(alpha.equals(term.substring(0,1))){
+                if(msg.substring(i,i+term.length()).equals(term))
+                count++;
+            i+=term.length()-1;
+            }
+        }
+        System.out.println(count);
 }
