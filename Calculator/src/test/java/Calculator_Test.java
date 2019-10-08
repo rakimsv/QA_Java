@@ -1,0 +1,17 @@
+import org.junit.Test;
+
+import com.nationwide.calculator.Calculator;
+
+import static org.junit.Assert.assertEquals;
+public class Calculator_Test {
+@Test
+public void multiplicationTest() {
+	Calculator calc = new Calculator();
+			assertEquals("Multiply failed",8,calc.multiply(2,4));
+	}
+@Test
+public void addTest() {
+	Calculator calc = new Calculator();
+	assertEquals("Add failed",15,calc.add(7,8));
+	}
+}
