@@ -1,0 +1,2 @@
+class AbsenteesException extends Exception{
+}
