@@ -1,0 +1,12 @@
+import java.awt.event.*;
+import java.awt.*;
+
+public class EventHandler implements ActionListener {
+
+	public EventHandler(TextField output) {
+		
+	}
+
+	public void actionPerformed(ActionEvent AE) {
+	
+}

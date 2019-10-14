@@ -1,0 +1,28 @@
+package main.java;
+import java.awt.event.*;
+
+class ButtonClicked1 implements ActionListener{
+	public void actionPerformed(ActionEvent E){
+		System.out.println("A");
+	}
+}
+class ButtonClicked2 implements ActionListener{
+	public void actionPerformed(ActionEvent E){
+		System.out.println("B");
+	}
+}
+class ButtonClicked3 implements ActionListener{
+	public void actionPerformed(ActionEvent E){
+		System.out.println("C");
+	}
+}
+class ButtonClicked4 implements ActionListener{
+	public void actionPerformed(ActionEvent E){
+		System.out.println("D");
+	}
+}
+class ButtonClicked5 implements ActionListener{
+	public void actionPerformed(ActionEvent E){
+		System.out.println("E");
+	}
+}

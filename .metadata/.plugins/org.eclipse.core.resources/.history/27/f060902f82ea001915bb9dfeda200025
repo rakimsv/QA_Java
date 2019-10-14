@@ -1,0 +1,25 @@
+import java.awt.event.*;
+import java.awt.*;
+class EventHandler implements ActionListener {
+TextField Txt1,Txt2,Txt3;
+Label error;
+public EventHandler(TextField T1,TextField T2,TextField T3,Label ER) {
+	Txt1=T1;
+	Txt2=T2;
+	Txt3=T3;
+	error=ER;
+}
+public void actionPerformed(ActionEvent AE) {
+	int A,B,C;
+	A=B=C=0;
+	Button Btn;
+	Btn=(Button)AE.getSource();
+	String sign = Btn.getLabel();
+	A = Integer.parseInt(Txt1.getText();
+	B = Integer.parseInt(Txt2.getText());
+	if(sign.contentEquals("+")) {
+		C=A+B;
+	}
+	Txt3.setText( Integer.toString(C));
+	}
+}

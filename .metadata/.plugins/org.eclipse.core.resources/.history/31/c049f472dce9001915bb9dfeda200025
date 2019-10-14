@@ -1,0 +1,14 @@
+import java.awt.Frame;
+import java.awt.Button;
+
+class WindowXP{
+    public static void main(String XYX[]){
+        Button Btn1 = new Button("Click1");
+        Button Btn2 = new Button("Click2");
+    	Frame F = new Frame("Nationwide");
+    	F.add(Btn1);
+    	F.add(Btn2);
+    	F.setSize(400,400);
+        F.setVisible(true);
+    }
+}

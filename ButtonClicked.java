@@ -1,0 +1,7 @@
+import java.awt.event.*;
+
+class ButtonClicked implements ActionListener{
+    public void actionPerformed(ActionEvent E){
+        System.out.println("HeLlO wOrLd My FrIeNdS...");
+    }
+}

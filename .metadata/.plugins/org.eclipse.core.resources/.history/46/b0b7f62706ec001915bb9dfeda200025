@@ -1,0 +1,37 @@
+import java.awt.TextField;
+import java.awt.event.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.Statement;
+
+public class Form implements ActionListener{
+
+Connection C;
+Statement S;
+TextField regno,name,marks;
+
+
+	public static void main(String xyz[]) {
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			
+			Connection C = DriverManager.getConnection("jdbc:mysql://localhost/Nationwide","root","root");
+			Statement S = C.createStatement();
+			
+			String regno=regno.getText();
+			String name=name.getText();
+			String marks=marks.getText();
+
+			S.executeupdate("insert into school values("+RegNo.getText(", '")+name.getText(", '")+marks.getText(")"));
+		}
+		catch(Exception E) {
+			System.out.println(E);
+	}
+}
+
+
+	public void actionPerformed(ActionEvent event) {
+		// TODO Auto-generated method stub
+		
+	}
+}

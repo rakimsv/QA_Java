@@ -1,0 +1,44 @@
+import java.awt.BorderLayout;
+import java.awt.Button;
+import java.awt.Frame;
+import java.awt.Panel;
+import java.awt.TextField;
+import java.awt.event.ActionEvent;
+
+import com.sun.corba.se.pept.transport.EventHandler;
+
+import java.awt.event.*;
+
+public class DigitstoWords2Handler {
+	
+
+public static void main(String xyz[]) {
+	Frame F = new Frame("Rakim's Number Reader");
+	Panel P1 = new Panel();
+	Panel P2 = new Panel();
+	Panel P3 = new Panel();
+	
+	TextField input;
+	Button convert;
+	TextField output;
+	
+	input=new TextField(20);
+	output=new TextField(20);
+	convert=new Button("Convert");
+
+	EventHandler event = new EventHandler();
+	
+	convert.addActionListener(event);
+	
+	F.add(P1,BorderLayout.NORTH);
+	F.add(P2,BorderLayout.CENTER);
+	F.add(P3,BorderLayout.SOUTH);
+	
+	P1.add(input);
+	P2.add(convert);
+	P3.add(output);
+	
+	F.setSize(400,150);
+	F.setVisible(true);
+}
+}

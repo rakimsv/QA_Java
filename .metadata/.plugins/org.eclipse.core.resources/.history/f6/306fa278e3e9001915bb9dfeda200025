@@ -1,0 +1,32 @@
+package main.java;
+import java.awt.*;
+
+class WindowXP{
+    public static void main(String xyz[]){
+	    Button B1,B2,B3,B4,B5;
+	    B1 = new Button("Click1");
+	    B2 = new Button("Click2");
+	    B3 = new Button("Click3");
+	    B4 = new Button("Click4");
+	    B5 = new Button("Click5");
+	       
+	    Frame F = new Frame("Nationwide");
+	    F.add(B1 ,BorderLayout.NORTH);
+	    F.add(B2 ,BorderLayout.EAST);
+	    F.add(B3 ,BorderLayout.WEST);
+	    F.add(B4 ,BorderLayout.SOUTH);
+	    F.add(B5);
+	
+	    F.setSize(400,400);
+	    F.setVisible(true);
+	
+	    ButtonClicked1 BEvent1 = new ButtonClicked1();
+	    B1.addActionListener(BEvent1);
+	    ButtonClicked2 BEvent2 = new ButtonClicked2();
+	    B2.addActionListener(BEvent2);
+	    ButtonClicked3 BEvent3 = new ButtonClicked3();
+	    B3.addActionListener(BEvent3);
+	    ButtonClicked4 BEvent4 = new ButtonClicked4();
+	    B4.addActionListener(BEvent4);
+    }
+}

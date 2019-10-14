@@ -1,0 +1,33 @@
+import java.awt.*;
+
+public class NumberReader {
+	public static void main(String xyz[]) {
+		Frame F = new Frame("Rakim's Number Reader");
+		Panel P1 = new Panel();
+		Panel P2 = new Panel();
+		Panel P3 = new Panel();
+		
+		TextField input;
+		Button convert;
+		TextField output;
+		
+		input=new TextField(20);
+		output=new TextField(20);
+		convert=new Button("Convert");
+		
+		EventHandler event = new EventHandler(output);
+		
+		convert.addActionListener(event);
+		
+		F.add(P1,BorderLayout.NORTH);
+		F.add(P2,BorderLayout.CENTER);
+		F.add(P3,BorderLayout.SOUTH);
+		
+		P1.add(input);
+		P2.add(convert);
+		P2.add(output);
+		
+		F.setSize(400,400);
+		F.setVisible(true);
+	}
+}

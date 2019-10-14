@@ -1,0 +1,26 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class Form {
+
+static String T1,T2,T3;
+
+
+	public static void main(String xyz[]) {
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			
+			Connection C = DriverManager.getConnection("jdbc:mysql://localhost/Nationwide","root","root");
+			statement S = C.createStatement();
+			
+			String RegNo=T1.getText();
+			String Name=T2.getText();
+			String Marks=T3.getText();
+
+			S.executeupdate("insert into school values("+RegNo(", '")+Name(", '")+Marks(")"));
+		}
+		catch(Exception E) {
+			System.out.println(E);
+	}
+}
+}

@@ -1,0 +1,23 @@
+import java.awt.event.*;
+import java.awt.*;
+class EventHandler implements ActionListener {
+TextField screen;
+String Curr = "";
+
+
+public EventHandler(TextField scr) {
+	screen = scr;
+}
+public void actionPerformed(ActionEvent AE) {
+	screen.setText(Curr+((Button)AE.getSource()).getLabel());
+	if(screen.setText(Curr+((Button)AE.getSource()).getLabel())) {
+		screen.setText("");
+		screen.setText(Curr+((Button)AE.getSource()).getLabel());
+	}
+	else {
+		Curr = screen.getText();
+	}
+	
+}
+}
+

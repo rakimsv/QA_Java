@@ -1,0 +1,9 @@
+import org.junit.Test;
+
+public class Calculator_Test {
+@Test
+public void multiplicationTest() {
+	Calculator calc = new Calculator();
+			calc.multiply(2,4) == 8;
+	}
+}

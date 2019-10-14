@@ -1,0 +1,44 @@
+import java.awt.BorderLayout;
+import java.awt.Button;
+import java.awt.Frame;
+import java.awt.GridLayout;
+import java.awt.Panel;
+import java.awt.TextField;
+
+public class FormGUI {
+	public static void main(String xyz[]) {
+	Frame F = new Frame("Form Submission");
+	Panel P1 = new Panel();
+	Panel P2 = new Panel();
+	Panel P3 = new Panel();
+	Panel P4 = new Panel();
+	
+	TextField regno;
+	TextField name;
+	TextField marks;
+	Button submit;
+	
+	submit = new Button();
+	regno = new TextField(20);
+	name = new TextField(20);
+	marks = new TextField(20);
+	
+	GridLayout GL = new GridLayout(1,4);
+	P2.setLayout(GL);
+	
+	F.add(P1,BorderLayout.NORTH);
+	F.add(P2,BorderLayout.CENTER);
+	F.add(P3,BorderLayout.CENTER);
+	F.add(P4,BorderLayout.SOUTH);
+	
+	P1.add(regno);
+	P2.add(name);
+	P3.add(marks);
+	P4.add(submit);
+	
+	F.setSize(600,400);
+	F.setVisible(true);
+	
+	
+}
+}

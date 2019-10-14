@@ -1,0 +1,7 @@
+import java.awt.Frame;
+class WindowXP{
+    public static void main(String XYX[]){
+        Frame F = new Frame();
+        F.setVisible(true);
+    }
+}

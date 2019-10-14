@@ -1,0 +1,12 @@
+import java.awt.event.*;
+import java.awt.*;
+class EventHandler implements ActionListener {
+Label error;
+public EventHandler() {
+	
+}
+public void actionPerformed(ActionEvent AE) {
+	.setText("Text.");
+	}
+}
+
